@@ -1,0 +1,33 @@
+# DuckDB databases
+*.duckdb
+*.duckdb.wal
+
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+
+# Large raw/processed data (keep scripts; re-download)
+data/raw/*.zip
+data/raw/*.csv
+data/processed/*.parquet
+data/processed/*.csv
+# Tableau CSVs: large ones ignored (fact_claim_slim ~75 MB, dim_member ~16 MB);
+# small aggregates (<1 MB) are committed so the repo shows dashboard inputs.
+data/tableau/fact_claim_slim.csv
+data/tableau/dim_member.csv
+
+# OS / editor
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+.vscode/
+
+# Power BI / Tableau local caches (Phase 2+)
+dashboard/*.pbix
+dashboard/*.twb
+dashboard/*.twbx
+*.tmp

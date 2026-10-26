@@ -1,0 +1,4 @@
+claim_type_cd,claim_type_desc,in_scope
+IP,Inpatient,true
+OP,Outpatient,true
+CAR,Carrier (professional),false
